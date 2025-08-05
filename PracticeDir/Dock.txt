@@ -1,0 +1,67 @@
+This is Practice of Docker and Container
+
+What is Docker ??
+->  Use to develop and run the application within Lightweight Containers.
+    Docker helps to make Container.
+    It provides Reproductivity and Standardization.
+
+Two Important things in Docker.
+    1) Docker Container
+    2) Docker Image
+
+
+Docker Container:-
+
+1) A way to package application with all the necessary dependancies and configuration.
+2) It has a Layers of Images. Mostly Linux base Image, bcz small in size.
+
+application image on top layer.
+alpine at bottom layer.
+
+3) Portable artifact, easily shared and moved around.
+4) Makes development and deployment more efficient.
+5) Light-weight in nature. it is simple to make, delete and use.
+
+
+Where do containers live ??
+-> Container stores into Container Repository.
+   many companies stores in their private Repositories
+   In Public repository at docker hub.
+
+
+How containers improved Application development ??
+-> 
+    Before containers:
+    We directly installed required application manually in every system.
+    Installation process is different on each OS environment.
+    Many steps where something could go wrong as per complexity of application.
+
+    After containers:
+    We dont need to installed anything manually in our system.
+    Because Container have their own Operating System with Linux based image.
+    Packaged with all needed configuration in a single Container.
+    One command to install the application.
+    Run same app with 2 different versions.
+
+How containers improved Application deployment ??
+->
+    Before Containers:
+    we need to installed required things on operating system.
+    dependency version conflicts.
+    misunderstanding between developer and Operation team.
+
+    After containers:
+    Developers & Operations work together to package the whole configuration of dependancies of application in a Container.
+    No other environment configuration needed on server. except docker runtime.
+
+
+Docker Image :
+    Docker image is the actual package with configuration and dependancies.
+    It's an artifact that can be moved around is actual the image.
+    it's not running.
+
+Docker container:
+    actually start the application.
+    container environment is created.
+    it's running.
+

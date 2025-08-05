@@ -1,0 +1,10 @@
+Docker Commands list :
+
+docker pull Image_Name  (Pull from dockerhub)  = To download a Image from dockerhub
+docker images             =     To show the list of Images are exist.
+
+docker run Image_Name     =     To make a New Container
+docker run -it Image_Name =     To make a new container in interactive mode. [type exit for exit]
+docker ps -a              =     To show the list of containers are exist
+docker ps                 =     shows running containers
+
