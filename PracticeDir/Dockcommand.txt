@@ -1,10 +1,16 @@
 Docker Commands list :
 
 docker pull Image_Name  (Pull from dockerhub)  = To download a Image from dockerhub
+docker pull Image_Name:version  (Pull from dockerhub)  = To download a Image from dockerhub with version
 docker images             =     To show the list of Images are exist.
 
 docker run Image_Name     =     To make a New Container
+docker run -d Image_Name  =     To make a new container in dettached mode. (for background execution)
 docker run -it Image_Name =     To make a new container in interactive mode. [type exit for exit]
 docker ps -a              =     To show the list of containers are exist
 docker ps                 =     shows running containers
 
+docker stop ContainerName =     To stop the container execution
+docker start ContainerName=     To Re-start container execution
+docker rmi Image_Name     =     To delete/remove the images
+docker rm ContainerName   =     To remove/delete the container

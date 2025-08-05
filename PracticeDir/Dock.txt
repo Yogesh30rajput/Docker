@@ -63,5 +63,11 @@ Docker Image :
 Docker container:
     actually start the application.
     container environment is created.
-    it's running.
+    Container is running environment for Image.
+    we can binded port.
 
+container port vs Host port:
+
+Multiple containers can run on your host machine.
+Your laptop has only certain ports available.
+conflict when same port on host machine.
