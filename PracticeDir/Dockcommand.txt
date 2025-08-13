@@ -44,3 +44,10 @@ docker network ls                  = list of all networks in the system
 
 
 Docker system commands:
+docker system df         = show docker disk usage (images, containers)
+docker system prune      = delete unused data( all stopped containers,
+                                               unused images with no container,
+                                               unused networks with no container,
+                                               all build cache)
+
+docker system info       = just provide more details
