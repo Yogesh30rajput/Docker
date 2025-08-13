@@ -51,3 +51,11 @@ docker system prune      = delete unused data( all stopped containers,
                                                all build cache)
 
 docker system info       = just provide more details
+docker top containerId   = it gives container details with pid details
+
+docker run -p 5000:5000 -d -m 512m ContainerName = Run a Docker container with a application,
+                                                   limited to 512MB memory
+
+docker run -p 5000:5000 -d -m 512m --cpu-quota=50000 ContainerName = Docker container with a limited to
+                                                                     512MB memory and CPU quota of 50%
+
