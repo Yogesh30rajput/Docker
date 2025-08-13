@@ -1,9 +1,21 @@
-This is Practice of Docker and Container
+Practice of Docker and Containerization
 
 What is Docker ??
 ->  Use to develop and run the application within Lightweight Containers.
     Docker helps to make Container.
     It provides Reproductivity and Standardization.
+
+Architecture of Docker:
+
+docker cli   ->   docker daemon  -> [Local Image = Container = Image registry(docker hub)]
+
+From the docker cli we write commands but the execution of the command is depends on the
+docker daemon. daemon is responsible for managing local images, container, pull images from repository.
+when we run the container docker daemon first check the required image in local repo. if its
+available then run the container.
+If required image is unavailable then it pulls from the docker hub registry to local system and 
+then run the container.
+
 
 Two Important things in Docker.
     1) Docker Container
