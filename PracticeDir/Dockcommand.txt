@@ -19,21 +19,28 @@ docker run -d -p6000:6379 --name Image_Name  = create container with custom name
 Image_Name]
 
 docker ps -a              =     To show the list of containers are exist
+docker container ls -a
 docker ps                 =     shows running containers
-
+docker container ls
 docker stop ContainerName =     To stop the container execution
+docker pause/unpause ContainerName = we can pause or unpause container
 docker start ContainerName=     To Re-start container execution
 docker rmi Image_Name     =     To delete/remove the images
-docker rm ContainerName   =     To remove/delete the container
+docker image remove Image_Name
 
+docker rm ContainerName   =     To remove/delete the container
+docker container prune    =     To remove/delete all stopped containers
 
 docker run -p6000:6379 ContainerName  = given custom host port no. to bind with container port
           [Hostport : containerport]
 hostport can be bind only once.
 
+docker image inspect Image_Name  = It provides details about the Image.
 docker logs ContainerName or ID   =  To check containers logs
 docker exec -it containerId /bin/bash  =  To debug or use other commands in runtime.
 
 docker network create networkName  = create new docker network
 docker network ls                  = list of all networks in the system
 
+
+Docker system commands:
